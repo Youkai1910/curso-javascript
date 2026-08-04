@@ -98,6 +98,8 @@ if(media > 9){
 }
 console.log("O desempenho é: "+desempenho);
 
+console.log("-----");
+
 //Exercícios 06
 /* "Uma loja online precisa sinalizar o nível de estoque de um produto, de acordo com a seguinte lógica:
 
