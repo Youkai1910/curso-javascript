@@ -107,15 +107,21 @@ Estoque normal: se for acima de 10"
 
 No final do arquivo "06-condicionais.js", programe os recursos necessário para verificar o estoque e exibir estas informações. */
 // Variável para teste (você pode alterar esse valor para testar os cenários)
-let estoque = 5; 
 
-if (estoque === 0) {
+let estoque = 5;
+
+if (estoque === 0 ) {
     console.log("Estoque Crítico");
-} else if (estoque <= 10) {
+}
+else if (estoque <= 10) {
     console.log("Estoque Baixo");
 } else {
-    console.log("Estoque normal");
+    console.log("Estoque Normal");
 }
+
+
+
+
 
 
 
