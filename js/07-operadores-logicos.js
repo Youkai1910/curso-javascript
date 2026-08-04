@@ -65,3 +65,63 @@ if (!loginBemSucedido) {
 } else {
     console.log("Veja o menu de opções e escolha uma...");
 }
+console.log("------");
+
+//Execícios-07
+
+/* No final do arquivo "07-operadores-logicos.js", programe um script que utilize variáveis/constantes para armazenar as informações (fictícias) de um visitante e, com operadores lógicos, permita determinar se o acesso é permitido.
+As regras são:
+- O visitante DEVE ter 18 anos ou mais.
+- O visitante precisa atender a PELO MENOS uma das seguintes condições:
+    - Possuir um convite VIP
+    - Estar numa lista de convidados
+ 
+Atenção: talvez você tenha que usar parênteses para determinar a ordem em que as condições serão avaliadas.
+A precedência padrão no JS é: primeiro !, depois && e por último ||. */
+
+const idadeVisitante = 18;
+const possuiConviteVip = false;
+const estaNaLista = true;
+
+const acessoPermitido = idadeVisitante >= 18 && (possuiConviteVip || estaNaLista);
+
+console.log(`Acesso permitido? ${acessoPermitido ? "Sim" : "Não"}`);
+
+console.log("------");
+/*  
+let idadeVisitante = 18;
+let possuiConviteVip = false;
+let estaNaLista = true;
+
+let acessoPermitido;
+
+if (idadeVisitante >= 18 && (possuiConviteVip || estaNaLista)) {
+    acessoPermitido = "Sim";
+} else {
+    acessoPermitido = "Não";
+}
+
+console.log(`Acesso permitido? ${acessoPermitido}`);
+
+const idade = 18;
+const possuiConviteVip = false;
+const estaNaLista = true;
+
+if (idade >= 18 && (possuiConviteVip || estaNaLista)) {
+    console.log("Acesso permitido!");
+    
+} else {
+    console.log("Acesso negado");
+}*/
+
+//versão 2: usando aninhada
+if (idadeVisitante >= 18) {
+    if (possuiConviteVip || estaNaLista) {
+        console.log("Acesso permitido");
+    } else {
+        console.log("Acesso negado");
+    } 
+}else {
+        console.log("Acesso negado");
+    }
+
