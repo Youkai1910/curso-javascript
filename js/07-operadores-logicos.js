@@ -37,11 +37,11 @@ let feriado = false;
 let fimDeSemana = false;
 
 /* Avaliar se o sistema está "rodando" em modo "completo" em dias úteis, ou em modo "reduzido" em feriados/finais de semana */
-if(feriado === true || fimDeSemana === true){
+if (feriado === true || fimDeSemana === true) {
     console.log("Modo reduzido: ativado");
 } else {
     console.log("Modo completo: ativado");
-    
+
 }
 /* Operador || retorna verdeiro se pelo menos uma das condições for verdadeira. */
 
@@ -53,15 +53,15 @@ let estaChovendo = false;
 
 if (estaChovendo) { // estaChovendo === false, estaChovendo !== true
     console.log("legal, bora pra praia...");
-    
+
 } else {
-console.log("Fica em, bora estudar!");
+    console.log("Fica em, bora estudar!");
 }
 
 /*  se o usuario naõ está logado, convida - lo a acessar a pagina de login.
 Caso contrario (ou seja, está logado), apresenta menu de opções. */
 if (!loginBemSucedido) {
     console.log("Por favor, acesse a página login.html");
-    } else {
-        console.log("Veja o menu de opções e escolha uma...");
-    }
+} else {
+    console.log("Veja o menu de opções e escolha uma...");
+}
