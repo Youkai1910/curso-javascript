@@ -10,8 +10,11 @@ console.log("\nComo posso ajudar? Escolha: \n\n" +
 
 console.log("----------");
 
-let opcao = 1;
+let opcao = Number(prompt("Digite uma das opções validas (1, 2 ou 3):"));
 
+//parseInt() -> converte prá número inteiro
+//parseFloat() ->  converte pra número decimal/quebrado/real
+//String() -> converte um dado para texto (string)
 switch (opcao) {
     case 1:
         console.log("Financeiro");
