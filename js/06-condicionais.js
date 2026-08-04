@@ -121,6 +121,19 @@ else if (estoque <= 10) {
     console.log("Estoque Normal");
 }
 
+console.log("-----");
+
+console.log("Exemplo 4: condicional com operador ternário");
+console.log("?:");
+console.log("Permite fazer if/else curto/abreviado");
+
+let valorDaIdade = 5;
+let resultado = valorDaIdade >= 18 ? "Maior" : "Menor";
+console.log(resultado);
+
+
+
+
 
 
 
