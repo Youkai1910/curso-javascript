@@ -8,10 +8,10 @@ console.log("Executa ações determinadas enquanto uma condição for verdadeira
 
 
 //Variável de controle
-let contador = 1;
+let i = 1;
 
-while (contador <= 10) {
-    console.log("Valor de contador é: "+contador);
-    contador++; 
+while (i <= 10) {
+    console.log("Valor de contador é: "+i);
+    i++; 
 }
 
