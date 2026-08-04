@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe Geral do JS</title>
+</head>
+
+<body>
+    <h1>Conhecendo a linguagem JavaScript</h1>
+    <hr>
+    <!-- aqui, no final da pagina pode programar o js -->
+    <script>
+        //comentário de uma linha  ctrl ;)
+
+        /* comentario de varias linhas (shift alt a) */
+
+        //comando de saida
+        console.log("Hello World! :)");
+        /* Manipulação de dados de memoria */
+
+        //Variaveis: o valor pode mudar
+        let ano = 2026;
+
+        //obs. variavel pode ser considerado sem valor
+        let teste; // undefined(indefinids(indefinida, ou seja, sem valor))
+
+        //Constante: o valor fixo
+        //Constante: valor é fixo
+        const aluno = "Alexandre"; // stringo ou texto
+        const outroTeste = "Tem Nada ";
+
+        //Exibindo no console os valores em memoriá
+        console.log("Ano =", ano);
+        console.log("Nome =", aluno);
+        console.log(outroTeste);
+
+        //Reatribuir ou atualziar valor de variarel
+        ano = 2027;
+        console.log("Ano =", ano);
+        //A linha abaixo dá erro, pois não podemos mudar
+        //o valor de constante ja definidas
+        //aluno = "Fulano";
+
+
+
+        /* Declarando variavéis de uma vez... */
+        let a, b, c;//undefined
+
+        //... e usando /atribuindo depois
+        a = 10;
+        b = "Senac"
+        c = 2112;
+
+        let numero = 15;
+        let numero2 = 5;
+
+        let soma = numero + numero2;
+        let subtracao = numero - numero2;
+        let multiplicacao = numero * numero2;
+        let divisao = numero / numero2;
+        console.log("Soma =", soma);
+        console.log("Subtração =", subtracao);
+        console.log("Multiplicação =", multiplicacao);
+        console.log("divisão =", divisao);
+
+
+        /* atenção: usamos parenteses quando é necessario mudar a ordem de calculo da expressão */
+        let v = 10;
+        let x = 20;
+        let z = 30;
+        let media = (v + x + z) / 3;
+        console.log("Resutado =", media);
+
+        /* Saídas personalizadas */
+
+        /* Alexandre esta estudando programação no ano de 2027 */
+
+        //Concatenação, usando o sinal de +
+        console.log(aluno + " está estudando programação no ano de " + ano + ".");
+
+        //Template String/Literal usando a crase `` e ${}
+        console.log(`${aluno} está estudando programação no ano de ${ano}.`);
+
+        //o valor da média é: 20
+        console.log("O valor da média é; " + media);
+        console.log(`O valor da média é: ${media}`);
+
+        //Aspa dupla "" serve para texto
+        //Aspa simples '' serve para texto
+
+        // Rock 'n' roll
+        //let estiloMusical = "Rock 'n' roll";//válido
+        //let estiloMusical = 'Rock 'n' roll';//inválido
+        //let estiloMusical = 'Rock "n" roll';//válido
+        let estiloMusical = 'Rock \'n\' roll';//somente aspas iguais validas usado caractere de escape \
+        console.log(estiloMusical);
+
+        //com template string, tanto faz qual aspas usar!
+        let estiloMusicalV2 = `Rock 'n' roll`;//válido
+        let estiloMusicalV3 = `Rock "n" roll`;//válido
+        console.log(estiloMusicalV2);
+        console.log(estiloMusicalV3);
+
+
+
+
+    </script>
+</body>
+
+</html>
