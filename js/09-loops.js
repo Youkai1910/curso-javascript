@@ -38,6 +38,7 @@ const bandas = [
 // Guardando Primeiro o tamanho do array
 const quantidadeDeBandas = bandas.length;
 
+//Obs.: sempre inicie em Zero para acessar Arrays
 for(i = 0; i < quantidadeDeBandas; i++){
     console.log(bandas[i]);
 }
