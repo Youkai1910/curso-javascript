@@ -47,6 +47,23 @@ console.log(Math.floor(19.9));// arredonda pra baixo
 console.log(Math.max(10, 5, 200, 7));// retorna o maior
 console.log(Math.min(10, 5, 200, 7));// retorna o menor
 
+console.log("\n--------------------\n\n");
+
+console.log("Funções para ARRAY\n\n");
+const filiaisSP = ["São Paulo", "Mogi das Cruzes", "Ubatuba"];
+const filiaisRj = ["Rio de Janeiro", "Ptrópolis"];
+
+//Concatenando arrays para formar um novo array
+const filiaisSudeste = filiaisSP.concat(filiaisRj);
+console.log(filiaisSudeste);
+
+//Operador SPREAD (...) para gerar um novo array
+const outroExemplo = [...filiaisSP, ...filiaisRj];
+console.log(outroExemplo);
+
+
+
+
 
 
 
