@@ -65,7 +65,7 @@ for (const prop in pessoa) {
     console.log(pessoa[prop]);
 }
 
-console.log("------");
+console.log("---------");
 
 console.log("Exercício");
 
@@ -76,6 +76,7 @@ const clientes = [
 ];
 for (const cliente of clientes) {
     console.log(`- Cliente: ${cliente.nome}, ID: ${cliente.identificador}`);
+    //("- Cliente: "+cliente.nome+", ID: "+cliente.identificador); <- contatenação
 };
 
 
