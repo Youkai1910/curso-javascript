@@ -62,6 +62,28 @@ const outroExemplo = [...filiaisSP, ...filiaisRj];
 console.log(outroExemplo);
 
 
+console.log("\n-----------\n\n");
+
+console.log("Recursos de Internacionalização\n\n");
+
+const valor1 = 1258.974;
+const valor2 = 74789005;
+console.log(valor1);
+console.log(valor2);
+
+// Criando um Formatador (formatter) de valor monetário
+const formatadorDePreco = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL"
+});
+console.log(formatadorDePreco.format(valor1));
+console.log(formatadorDePreco.format(valor2));
+
+
+
+
+
+
 
 
 
