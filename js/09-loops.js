@@ -28,9 +28,11 @@ console.log("-------");
 
 console.log("Exemplo 3: loop para acessar ARRAY");
 
-const bandas = ["Ac/Dc", "Metallica", "Iron Maiden", "Yes"];
+const bandas = [
+    "Ac/Dc", "Metallica", "Iron Maiden", "Yes",
+"Guns N Roses", "Motle Crue", "Led Zepellin", "Deflaprd" ];
 
-for(i = 0; i < 4; i++){
+for(i = 0; i < bandas.length; i++){
     console.log(bandas[i]);
 }
 
