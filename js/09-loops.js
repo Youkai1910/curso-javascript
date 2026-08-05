@@ -11,8 +11,8 @@ console.log("Executa ações determinadas enquanto uma condição for verdadeira
 let i = 1;
 
 while (i <= 10) {
-    console.log("Valor de contador é: "+i);
-    i++; 
+    console.log("Valor de contador é: " + i);
+    i++;
 }
 console.log("--------");
 
@@ -20,8 +20,8 @@ console.log("Exemplo 2: for()");
 console.log("Executa ações de acordo com uma quantidade de vezes indica.");
 
 //for (variável de controle; condição; atualização)
-for( let i = 1; i <= 5; i++){
-   console.log("Senac "+i);   
+for (let i = 1; i <= 5; i++) {
+    console.log("Senac " + i);
 }
 
 console.log("-------");
@@ -30,7 +30,7 @@ console.log("Exemplo 3: loop para acessar ARRAY");
 
 const bandas = [
     "Ac/Dc", "Metallica", "Iron Maiden", "Yes",
-"Guns N Roses", "Motle Crue", "Led Zepellin", "Deflaprd" ];
+    "Guns N Roses", "Motle Crue", "Led Zepellin", "Deflaprd"];
 
 
 // Propriedade length: serve para acessar o tamanho do array
@@ -39,15 +39,15 @@ const bandas = [
 const quantidadeDeBandas = bandas.length;
 
 //Obs.: sempre inicie em Zero para acessar Arrays
-for(i = 0; i < quantidadeDeBandas; i++){
+for (i = 0; i < quantidadeDeBandas; i++) {
     console.log(bandas[i]);
 }
 
 console.log("---------");
 console.log("Loop exclusivo para acessar arrays");
 
-for (const banda of bandas){
-     console.log(banda);     
+for (const banda of bandas) {
+    console.log(banda);
 }
 
 console.log("--------");
@@ -61,13 +61,28 @@ const pessoa = {
     cidade: "São Paulo"
 };
 
-for( const prop in pessoa) {
-  console.log(pessoa[prop]);  
+for (const prop in pessoa) {
+    console.log(pessoa[prop]);
 }
 
+console.log("------");
+
+console.log("Exercício");
+
+const clientes = [
+    { identificador: 1, nome: "Huguinho" },
+    { identificador: 2, nome: "Zezinho" },
+    { identificador: 3, nome: "Luízinho" }
+];
+for (const cliente of clientes) {
+    console.log(`- Cliente: ${cliente.nome}, ID: ${cliente.identificador}`);
+};
 
 
-    
+
+
+
+
 
 
 
