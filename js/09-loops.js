@@ -32,7 +32,13 @@ const bandas = [
     "Ac/Dc", "Metallica", "Iron Maiden", "Yes",
 "Guns N Roses", "Motle Crue", "Led Zepellin", "Deflaprd" ];
 
-for(i = 0; i < bandas.length; i++){
+
+// Propriedade length: serve para acessar o tamanho do array
+
+// Guardando Primeiro o tamanho do array
+const quantidadeDeBandas = bandas.length;
+
+for(i = 0; i < quantidadeDeBandas; i++){
     console.log(bandas[i]);
 }
 
