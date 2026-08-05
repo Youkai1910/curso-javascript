@@ -43,6 +43,17 @@ for(i = 0; i < quantidadeDeBandas; i++){
     console.log(bandas[i]);
 }
 
+console.log("---------");
+console.log("Loop exclusivo para acessar arrays");
+
+for (const banda of bandas){
+     console.log(banda);     
+}
+    
+
+
+
+
 
 
 
