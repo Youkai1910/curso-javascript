@@ -49,6 +49,24 @@ console.log("Loop exclusivo para acessar arrays");
 for (const banda of bandas){
      console.log(banda);     
 }
+
+console.log("--------");
+
+console.log("Exemplo 5: for/in");
+console.log("Loop exclusivo para objeto");
+
+const pessoa = {
+    nome: "Chaves",
+    idade: 25,
+    cidade: "São Paulo"
+};
+
+for( const prop in pessoa) {
+  console.log(pessoa[prop]);  
+}
+
+
+
     
 
 
