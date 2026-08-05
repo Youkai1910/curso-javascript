@@ -14,4 +14,15 @@ while (i <= 10) {
     console.log("Valor de contador é: "+i);
     i++; 
 }
+console.log("--------");
+
+console.log("Exemplo 2: for()");
+console.log("Executa ações de acordo com uma quantidade de vezes indica.");
+
+//for (variável de controle; condição; atualização)
+for(let i = 1; i <= 5; i++){
+   console.log("Senac "+i);   
+}
+
+
 
