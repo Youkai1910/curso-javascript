@@ -92,7 +92,7 @@ console.log("Simplificando com Arrow Function");
 //Versão 3: sintaxe arrow function com return IMPLÍCITO
 const dobrar = numero  => numero * 2;
     
-console.log(dobrar(10));
+console.log(dobrar(20));
 
 
 
