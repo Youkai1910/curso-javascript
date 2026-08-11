@@ -23,5 +23,11 @@ botaoSomar.addEventListener("click", function(){
 
     botaoSubtrair.disabled = false;
 });
+
+botaoSubtrair.addEventListener("click", function (){
+    if(contador > 0) contador--;
+    pValor.textContent = contador;
+    if( contador === 0) botaoSubtrair.disabled = true;
+});
  
 
