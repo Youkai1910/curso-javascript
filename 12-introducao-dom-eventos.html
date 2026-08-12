@@ -44,7 +44,7 @@
         height: 80px;
     }
 
-    #contador.excesso {
+    .excesso {
         color: red;
         font-weight: bold;
     }
@@ -76,19 +76,21 @@
         <hr>
 
         <h2>3 - Trocar imagem</h2>
-        <img src="https://picsum.photos/300/200?1" alt="">
+        <img id="foto" src="imagens/escadas.jpg" alt="Pessoa nas escadas">
         
-
-
-        <button>Foto 1</button>
-        <button>Foto 2</button>
-        <button>Foto 3</button>
+        <button data-imagem="imagens/escadas.jpg" data-alt="Pessoa nas escadas">Foto 1</button>
+        <button data-imagem="imagens/luzes.jpg" data-alt="Duas lâmpada ligadas">Foto 2</button>
+        <button data-imagem="imagens/trilhos.jpg" data-alt="Linha de trem">Foto 3</button>
 
         <hr>
 
         <h2>4 - Contador de caracteres</h2>
-        <textarea id="mensagem"></textarea>
+        <p>
+            <small>Limite máximo de caracteres: <b>100</b></small>
+        </p>
+        <textarea id="mensagem" maxlength="100"></textarea>
         <p>Caracteres: <span id="contador">0</span></p>
+        <p>Restantes: <span id="regressivo">100</span></p>
 
         <hr>
 
