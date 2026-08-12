@@ -64,8 +64,8 @@ const botoesDeFoto = document.querySelectorAll("[data-imagem]");
 
 
 //Percorrer/Acessat o array de botões
-for(const botao of botoesDeFoto){
-    botao.addEventListener("click", function(){
+for (const botao of botoesDeFoto) {
+    botao.addEventListener("click", function () {
         //Pegar /obter os dados  dos botões (imagem e o alt)
         const imagem = botao.dataset.imagem;
         const textoAlt = botao.dataset.alt;
@@ -82,7 +82,7 @@ const spanContadorRegressivo = document.querySelector("#regressivo");
 const blimite = document.querySelector("p small b");
 
 //Evento de entrada de dados (digitação no campo)
-textareaMensagem.addEventListener("input", function(){
+textareaMensagem.addEventListener("input", function () {
     //Capturando  durante a digitação  a qtd digitada de caracteres
     let totalCaracteres = textareaMensagem.value.length;
 
@@ -93,15 +93,20 @@ textareaMensagem.addEventListener("input", function(){
     const contagemRegressiva = 100 - totalCaracteres;
     spanContadorRegressivo.textContent = contagemRegressiva;
 
-    if(totalCaracteres === 100){
+    if (totalCaracteres === 100) {
         spanContadorCaracteres.classList.add("excesso");
         blimite.classList.add("excesso")
     } else {
         spanContadorRegressivo.classList.remove("excesso");
     }
-    
+});
+/* Exemplo 5 */
+const pTlecaPressionada = document.querySelector("#tecla b");
 
-    });
+document.addEventListener("keyup", function(event){
+    
+});
+
 
 
 
