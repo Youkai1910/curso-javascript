@@ -25,9 +25,39 @@ botaoSomar.addEventListener("click", function(){
 });
 
 botaoSubtrair.addEventListener("click", function (){
+    //Evitar valor negativo
     if(contador > 0) contador--;
+
+    // Colocar no paragrafo chamado "valor" o número existente em contador
     pValor.textContent = contador;
+
+    //Quando o contador for zero, desativamos o botão Subtrair
     if( contador === 0) botaoSubtrair.disabled = true;
 });
+
+/* Exemplo 2 */
+const botaoMostrarEsconder = document.querySelector("#mostra-esconder");
+    const pTexto = document.querySelector("#texto");
+
+  // Ouvinte de evento para botão
+  botaoMostrarEsconder.addEventListener("click", function(){
+    //Usamos o toggle para ter o recurso de colocar/remover class
+    pTexto.classList.toggle("oculto");
+// Alternando o texto o botanão
+/* se o texto do botão for esconder, troque para, Caso  contrário, coloque Esconder */
+if (botaoMostrarEsconder.textContent === "Esconder") {
+    botaoMostrarEsconder.textContent = "Mostrar";
+} else{
+    botaoMostrarEsconder.textContent = "Esconder";
+}
+
+  });
+
+  
+
+    
+    
+ 
+
  
 
