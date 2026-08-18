@@ -182,7 +182,28 @@ botaoLimpar.addEventListener("click", function(){
 
 /* Exemplo 8 */
 
+const formExemplo = document.querySelector("#form-exemplo");
+const inputNome = formExemplo.querySelector("#nome");
+const inputIdade = formExemplo.querySelector("#idade");
+const pSaida = document.querySelector("#saida");
 
+// Usamos o evento submit para dar suporte a mouse, teclado e toque
+formExemplo.addEventListener("submit", function(event){
+    //Anulando o comportamento padrão do navegador
+    //(Comportamento padrão é tentar redirecionar)
+    event.preventDefault();
+
+    // pegando os valores digitados nos campos
+ const nome = inputNome.value;
+ const idade = Number(inputIdade.value);
+
+ console.log(nome, idade);
+
+ formExemplo.reset(); // limpando Todos os campos do formulário
+ inputNome.focus(); // devolvendo o foco ao campos nome
+ 
+ pSaida.textContent = "Seus dados foram cadastrados com sucesso!";
+});
 
 
 
