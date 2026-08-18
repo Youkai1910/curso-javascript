@@ -101,11 +101,26 @@ textareaMensagem.addEventListener("input", function () {
     }
 });
 /* Exemplo 5 */
-const pTlecaPressionada = document.querySelector("#tecla b");
+const pTeclaPressionada = document.querySelector("#tecla b");
+const pagina = document.querySelector("body");
 
 document.addEventListener("keyup", function(event){
     
+  const teclaUsada = event.key
+
+  pTeclaPressionada.textContent = teclaUsada;
+
+  switch (teclaUsada) {
+    case "a": pagina.style.background = "yellow"; break;
+    case "b": pagina.style.background = "lightblue"; break;
+    case "c": pagina.style.background = "gray"; break; 
+    default: pagina.style.background = "red";
+  }
+  console.log(teclaUsada);
+  
 });
+
+
 
 
 
