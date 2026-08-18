@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exemplos de DOM e Eventos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de DOM e Eventos</title>
 
-<style>
-    *, *::before, *::after {
-        box-sizing: border-box;
-    }
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: system-ui, sans-serif;
-        background: #f4f4f4;
-    }
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f4f4f4;
+        }
 
-    .container {
-        width: 80%;
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-    }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+        }
 
-    hr { margin: 40px 0; }
+        hr {
+            margin: 40px 0;
+        }
 
-    .oculto { display: none; }
+        .oculto {
+            display: none;
+        }
 
-    .feito {
-        text-decoration: line-through;
-        color: gray;
-    }
+        .feito {
+            text-decoration: line-through;
+            color: gray;
+        }
 
-    .feito::marker {
-        content: "✓ ";
-        color: green;
-    }
+        .feito::marker {
+            content: "✓ ";
+            color: green;
+        }
 
-    img { max-width: 300px; }
+        img {
+            max-width: 300px;
+        }
 
-    textarea {
-        width: 100%;
-        height: 80px;
-    }
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
 
-    .excesso {
-        color: red;
-        font-weight: bold;
-    }
+        .excesso {
+            color: red;
+            font-weight: bold;
+        }
 
-    progress.concluido { background: green; }
-</style>
+        progress.concluido {
+            accent-color: green;
+        }
+    </style>
 </head>
 
 <body>
@@ -77,7 +88,7 @@
 
         <h2>3 - Trocar imagem</h2>
         <img id="foto" src="imagens/escadas.jpg" alt="Pessoa nas escadas">
-        
+
         <button data-imagem="imagens/escadas.jpg" data-alt="Pessoa nas escadas">Foto 1</button>
         <button data-imagem="imagens/luzes.jpg" data-alt="Duas lâmpada ligadas">Foto 2</button>
         <button data-imagem="imagens/trilhos.jpg" data-alt="Linha de trem">Foto 3</button>
@@ -100,18 +111,18 @@
 
         <hr>
 
-        <h2>6 - Lista de tarefas</h2>
-        <input type="text" id="tarefa">
-        <button id="adicionar">Adicionar</button>
-        <ul id="lista"></ul>
+        <div class="exemplo-tarefas">
+            <h2>6 - Lista de tarefas</h2>
+            <input type="text" id="tarefa">
+            <button id="adicionar">Adicionar</button>
+            <ul id="lista"></ul>
+        </div>
 
         <hr>
 
         <h2>7 - Barra de progresso</h2>
         <progress id="barra" value="0" max="100"></progress>
-        
-
-
+        <br><br>
         <button id="carregar">Carregar</button>
         <button id="limpar">Limpar</button>
 
@@ -121,11 +132,12 @@
 
         <form id="form-exemplo">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            
+            <input type="text" id="nome" name="nome" required>
+
 
             <label for="idade">Idade:</label>
-            <input type="number" name="idade" id="idade">
+            <input type="number" name="idade" id="idade" required min="0" max="130">
+            <br>
             <button>Enviar</button>
         </form>
 
@@ -139,12 +151,12 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha">
         </p>
-
+        
         <button id="mostrar-senha">👁️ Mostrar senha</button>
     </div>
 
 
-<script src="js/12-introducao-dom-eventos.js"></script>
+    <script src="js/12-introducao-dom-eventos.js"></script>
 </body>
 
 </html>
