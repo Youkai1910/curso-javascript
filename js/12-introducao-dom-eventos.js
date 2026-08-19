@@ -205,6 +205,24 @@ formExemplo.addEventListener("submit", function(event){
  pSaida.textContent = "Seus dados foram cadastrados com sucesso!";
 });
 
+/* Exemplo 9 */
+const inputSenha = document.querySelector("#senha");
+const botaoMostrar = document.querySelector("#mostrar-senha");
+
+botaoMostrar.addEventListener("pointerdown", function(){
+    // Muda o tipo do campo senha para text (e mostra a semnha)
+    inputSenha.type = "text";
+
+    botaoMostrar.textContent = "Ocultar";
+});
+
+botaoMostrar.addEventListener("pointerup", function(){
+    // Muda o tipo do campo senha para passaword (esconde a senha)
+    inputSenha.type = "password";
+
+    botaoMostrar.textContent = "Mostrar senha";
+});
+
 
 
 
