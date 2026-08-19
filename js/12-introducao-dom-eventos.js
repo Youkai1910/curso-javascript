@@ -175,9 +175,9 @@ botaoCarregar.addEventListener("click", function () {
 });
 
 /* mini-exercicio: progrme o botão limpar para que, quando clicando, faça a barra de progresso voltar ao normal (sem cor e sem valor). */
-botaoLimpar.addEventListener("click", function(){
-   barraProgresso.value = 0 
-   barraProgresso.classList.remove("concluido");
+botaoLimpar.addEventListener("click", function () {
+    barraProgresso.value = 0
+    barraProgresso.classList.remove("concluido");
 });
 
 /* Exemplo 8 */
@@ -188,35 +188,35 @@ const inputIdade = formExemplo.querySelector("#idade");
 const pSaida = document.querySelector("#saida");
 
 // Usamos o evento submit para dar suporte a mouse, teclado e toque
-formExemplo.addEventListener("submit", function(event){
+formExemplo.addEventListener("submit", function (event) {
     //Anulando o comportamento padrão do navegador
     //(Comportamento padrão é tentar redirecionar)
     event.preventDefault();
 
     // pegando os valores digitados nos campos
- const nome = inputNome.value;
- const idade = Number(inputIdade.value);
+    const nome = inputNome.value;
+    const idade = Number(inputIdade.value);
 
- console.log(nome, idade);
+    console.log(nome, idade);
 
- formExemplo.reset(); // limpando Todos os campos do formulário
- inputNome.focus(); // devolvendo o foco ao campos nome
- 
- pSaida.textContent = "Seus dados foram cadastrados com sucesso!";
+    formExemplo.reset(); // limpando Todos os campos do formulário
+    inputNome.focus(); // devolvendo o foco ao campos nome
+
+    pSaida.textContent = "Seus dados foram cadastrados com sucesso!";
 });
 
 /* Exemplo 9 */
 const inputSenha = document.querySelector("#senha");
 const botaoMostrar = document.querySelector("#mostrar-senha");
 
-botaoMostrar.addEventListener("pointerdown", function(){
+botaoMostrar.addEventListener("pointerdown", function () {
     // Muda o tipo do campo senha para text (e mostra a semnha)
     inputSenha.type = "text";
 
     botaoMostrar.textContent = "Ocultar";
 });
 
-botaoMostrar.addEventListener("pointerup", function(){
+botaoMostrar.addEventListener("pointerup", function () {
     // Muda o tipo do campo senha para passaword (esconde a senha)
     inputSenha.type = "password";
 
