@@ -1,5 +1,7 @@
 'use strict';
 
+import { mostrarErro } from "./funcoes.js";
+
 const formulario = document.querySelector("form");
 const inputCep = formulario.querySelector("#cep");
 
@@ -108,21 +110,4 @@ async function buscarCep(cep) {
 
     }
 
-}
-
-function mostrarErro(input, spanErro, mensagem) {
-    // Exibindo a mensagem no spanErro
-    spanErro.textContent = mensagem;
-
-    // Se mensagem  não tiver vazia, aplica/remove CSS
-    if (mensagem !== "") {
-        input.classList.add("erro"); // coloca borda vermelha
-        input.classList.remove("ok"); // tira a borda verde
-    }
-    else {
-        // Caso contrário, remove/aplica
-        input.classList.remove("erro");
-        input.classList.add("ok");
-
-    }
 }
