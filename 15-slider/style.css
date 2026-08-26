@@ -23,3 +23,20 @@ body {
   object-fit: cover;
 }
 
+figure { position: relative;}
+figcaption {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  font-size: 22px;
+  height: 100px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
