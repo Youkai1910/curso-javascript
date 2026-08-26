@@ -38,3 +38,4 @@ body {
   transform: scale(1.05);
 }
 
+.sl-wrapper .sl-download a { color: black; }
